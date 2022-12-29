@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Portafolio</title>
+</head>
+<body>
+    <!-- Seccion Inicio -->
+    <section id="inicio" class="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1>Alejandro B</h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionMenu(this)">Inicio</a></li>
+                            <li><a href="#sobre-mi" onclick="seleccionMenu(this)">Sobre Mi</a></li>
+                            <li><a href="#portafolio" onclick="seleccionMenu(this)">Portaolio</a></li>
+                            <li><a href="#servicios" onclick="seleccionMenu(this)">Servicios</a></li>
+                            <li><a href="#contacto" onclick="seleccionMenu(this)">Contacto</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- Iconos del responsive -->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+                    <!-- Iconos de las redes Sociales -->
+                    <div class="redes">
+                        <a href="https://github.com/AlejandroBenjumeaAguirre"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/alejandrobenjumea/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.youtube.com/channel/UCp3pkEhU_3Bk-ff9dSELtWA"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">Bienvenidos</p>
+                <h2>Soy <span>Alejandro Benjumea Aguirre</span>, Desarrollador Full Stack</h2>
+                <p class="description"></p>
+                <a href="#portafolio">Ir a Portafolio</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seccion Sobre mi -->
+    <section id="sobre-mi">
+        <div class="contenedor-foto">
+            <img src="./assets/img/foto.jpg" alt="foto">
+        </div>
+        <div class="sobre-mi">
+            <p class="titulo-seccion">Sobre Mi</p>
+            <h2>Hola soy <span>Alejandro Benjumea Aguirre</span></h2>
+            <h3>Desarrollador Fullstack</h3>
+            <p>Desarrollador Full Stack con conocimiento de lenguajes de programación como PHP, JavaScript y TypeScript, CSS y HTML, SQL. Deseable manejo de Herramientas de 
+                desarrollo como NodeJs, Angular, ReactJS. Aparte de conocimiento y experiencia en manejo de bases de datos SQL y No SQL con motores como Postgresql y MongoDB. 
+            </p>
+            <p>Actualmente estudiante del quinto semestre de la universidad UNAD, en la carrera Ingeniería en sistemas, egresado del SENA como tecnólogo en análisis y 
+                desarrollo de sistemas de información, especialidad en gestión y seguridad en bases de datos.</p>
+            <a href="https://1drv.ms/w/s!AnGCHDYzKue8hw0kbaWP9y1Wr6Mi?e=ZvxbS9">Descargar CV</a>
+        </div>
+    </section>
+
+    <!-- Seccion Servicios -->
+    <section id="servicios">
+        <h3 class="titulo-seccion">Mis Servicios</h3>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Diseño de Sitios Web</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Web</li>
+                    <li>Graphic</li>
+                    <li>SEO</li>
+                </ul>
+                <p>Diseño y creo paginas web acordes a sus necesidades, utilizando tecnicas de SEO mejoro el posicionamiento del sitio para que sea mas relevante en las
+                    busquedas en Google.
+                </p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Back - End</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>PHP</li>
+                    <li>NodeJS</li>
+                    <li>APIs</li>
+                </ul>
+                <p>Creacion de APIs Rest con lenguajes como PHP, Javascript y Typescript utilizando NodeJS, incluyendo autenticacion por medio de tokens.
+                </p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Front - End</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Jquery</li>
+                    <li>Angular</li>
+                    <li>ReactJS</li>
+                </ul>
+                <p>Creacion de aplicaciones utilizando frameworks como Angular y librerias como ReactJS y Jquery, con lenguajes como Javascript y Typescript.
+                </p>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- Seccion Habilidades -->
+    <div class="contenedor-skills" id="skills">
+        <h3>Habilidades</h3>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Html & Css</p>
+                <span class="porcentaje">90%</span>
+            </div>
+            <div class="barra">
+                <div id="html" class="" data-value="90%"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Javascript</p>
+                <span class="porcentaje">90%</span>
+            </div>
+            <div class="barra">
+                <div id="js" class="" data-value="90%"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>PHP</p>
+                <span class="porcentaje">75%</span>
+            </div>
+            <div class="barra">
+                <div id="php" class="" data-value="75%"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Typescript</p>
+                <span class="porcentaje">75%</span>
+            </div>
+            <div class="barra">
+                <div id="ts" class="" data-value="75%"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Base de datos</p>
+                <span class="porcentaje">90%</span>
+            </div>
+            <div class="barra">
+                <div id="bd" class="" data-value="90%"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Angular</p>
+                <span class="porcentaje">70%</span>
+            </div>
+            <div class="barra">
+                <div id="angular" class="" data-value="70%"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>JQuery</p>
+                <span class="porcentaje">90%</span>
+            </div>
+            <div class="barra">
+                <div id="jquery" class="" data-value="90%"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Seccion Portafolio -->
+    <section id="portafolio">
+        <h3 class="titulo-seccion">Mis Proyectos</h3>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="./assets/img/code-583073_1280.jpg" alt="">
+                <div class="info">
+                    <h4>Descripción del Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="./assets/img/code-583073_1280.jpg" alt="">
+                <div class="info">
+                    <h4>Descripción del Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="./assets/img/code-583073_1280.jpg" alt="">
+                <div class="info">
+                    <h4>Descripción del Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="./assets/img/code-583073_1280.jpg" alt="">
+                <div class="info">
+                    <h4>Descripción del Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="./assets/img/code-583073_1280.jpg" alt="">
+                <div class="info">
+                    <h4>Descripción del Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="./assets/img/code-583073_1280.jpg" alt="">
+                <div class="info">
+                    <h4>Descripción del Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="./assets/img/code-583073_1280.jpg" alt="">
+                <div class="info">
+                    <h4>Descripción del Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="./assets/img/code-583073_1280.jpg" alt="">
+                <div class="info">
+                    <h4>Descripción del Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="./assets/img/code-583073_1280.jpg" alt="">
+                <div class="info">
+                    <h4>Descripción del Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Seccion Contacto -->
+    <section id="contacto">
+        <h3 class="titulo-seccion">Contacto</h3>
+        <div class="contenedor-form">
+            <form action="https://formsubmit.co/alejo120792120792@gmail.com" method="POST">
+                <div class="fila mitad">
+                    <input type="text" placeholder="Nombre completo" class="input-mitad" name="name">
+                    <input type="email" placeholder="Email" class="input-mitad" name="email">
+                </div>
+                <div class="fila">
+                    <input type="text" placeholder="Asunto..." class="input-full" name="subject">
+                </div>
+                <div class="fila">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Tu mensaje" class="input-full" name="description"></textarea>
+                </div>
+
+                <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+            </form>
+        </div>
+    </section>
+
+    <!-- Seccion Footer -->
+    <footer>
+        <p>Todos los derechos reservados - 2022 - Created By <span>Alejandro Benjumea Aguirre</span></p>
+        <div class="redes">
+            <a href="https://github.com/AlejandroBenjumeaAguirre"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/alejandrobenjumea/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.youtube.com/channel/UCp3pkEhU_3Bk-ff9dSELtWA"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+    </footer>
+
+    <script src="assets/index.js"></script>
+</body>
+</html>
